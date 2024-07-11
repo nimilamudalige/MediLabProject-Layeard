@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode1" prefHeight="586.0" prefWidth="494.0" style="-fx-background-color: #686de0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mediLab.Controller.AddClientFormController">
+   <children>
+      <Pane layoutX=lk.ijse.mediLab.Controller.AddClientFormController"63.0" layoutY="107.0" opacity="0.93" prefHeight="409.0" prefWidth="383.0" style="-fx-background-color: #95afc0;">
+         <children>
+            <JFXButton layoutX="66.0" layoutY="334.0" onAction="#btnClearClientOnaction" prefHeight="44.0" prefWidth="100.0" style="-fx-background-color: #30336b;" text="clear" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="txtName" layoutX="177.0" layoutY="76.0" onKeyReleased="#txtnameReleasedOnAcrtion" />
+            <TextField fx:id="txtAge" layoutX="177.0" layoutY="115.0" onKeyReleased="#AgeOnKeyReleasedOnAction" />
+            <TextField fx:id="txtTel" layoutX="177.0" layoutY="197.0" onKeyReleased="#ContactOnKeyRelesedOnAction" />
+            <Text layoutX="36.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client Id            :" wrappingWidth="140.7294921875">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="36.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact            :" wrappingWidth="146.7294921875">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtAdd" layoutX="177.0" layoutY="156.0" onKeyReleased="#addOnKeyRelesedOnAction" />
+            <Text layoutX="6.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      Address            :" wrappingWidth="170.248046875">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <JFXButton layoutX="218.0" layoutY="334.0" onAction="#btnClientAddOnAction" prefHeight="44.0" prefWidth="100.0" style="-fx-background-color: #30336b;" text="ADD" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="37.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UserId             :" wrappingWidth="146.7294921875">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtUser" layoutX="177.0" layoutY="277.0" />
+            <Label fx:id="lblClientId" layoutX="179.0" layoutY="45.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Text layoutX="37.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email               :" wrappingWidth="146.7294921875">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtEmail" layoutX="177.0" layoutY="239.0" onKeyReleased="#EmailOnKeyReleleasedOnAction" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+         <effect>
+            <DropShadow height="71.41" radius="37.427499999999995" width="80.3">
+               <color>
+                  <Color red="0.11033950746059418" green="0.10721247643232346" blue="0.14473684132099152" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <Text layoutX="96.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client Name      :" wrappingWidth="146.7294921875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="98.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client Age        :" wrappingWidth="146.7294921875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="157.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Client" wrappingWidth="208.18212890625">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+         <stroke>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9605262875556946" green="0.9605262875556946" blue="0.9605262875556946" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </stroke>
+      </Text>
+      <JFXButton fx:id="btnbackAdd" layoutX="342.0" layoutY="534.0" onAction="#btnBackAddClientOnAction" prefHeight="20.0" prefWidth="88.0" style="-fx-background-color: #fa983a;" text="Back" textFill="#c72638">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

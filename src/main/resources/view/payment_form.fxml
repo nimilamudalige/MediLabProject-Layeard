@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mediLab.Controller.PaymentFormController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1200.0" layoutX="-1.0" layoutY="-3.0">
+         <image>
+            <Image url="@../asserts/istockphoto-901218596-1024x1024-1-1-01.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="434.0" layoutY="42.0" prefHeight="43.0" prefWidth="334.0" text="Payment Manage" textFill="#1e4872" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="MathJax_SansSerif-Bold" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblPayment" layoutX="43.0" layoutY="125.0" prefHeight="485.0" prefWidth="673.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="150.0" text="PaymentId" />
+          <TableColumn fx:id="coiDate" minWidth="0.0" prefWidth="216.0" text="Date" />
+            <TableColumn fx:id="colAmount" prefWidth="306.0" text="Amount" />
+        </columns>
+      </TableView>
+      <Pane layoutX="763.0" layoutY="131.0" prefHeight="473.0" prefWidth="397.0" style="-fx-background-color: d2e7f8;">
+         <opaqueInsets>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </opaqueInsets>
+         <effect>
+            <DropShadow height="80.06" radius="32.1175" spread="0.27" width="50.41">
+               <color>
+                  <Color red="0.026924951002001762" green="0.20552712678909302" blue="0.34210526943206787" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Text layoutX="49.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Id :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="53.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="54.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtPaymentId" layoutX="53.0" layoutY="180.0" prefHeight="33.0" prefWidth="263.0" />
+            <TextField fx:id="txtAmount" layoutX="54.0" layoutY="275.0" prefHeight="33.0" prefWidth="263.0" />
+            <JFXButton fx:id="btnPaymentAdd" layoutX="49.0" layoutY="340.0" onAction="#btnPamentAddOnAction" prefHeight="30.0" prefWidth="81.0" style="-fx-background-color: #189720;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnPaymentUpdate" layoutX="155.0" layoutY="340.0" onAction="#btnpaymentUpdstrOnAction" style="-fx-background-color: #2d0b90;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnPymentDelete" layoutX="265.0" layoutY="340.0" onAction="#btnPaymentDeleteOnAction" style="-fx-background-color: #ae1717;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="lblDate" layoutX="49.0" layoutY="91.0" prefHeight="33.0" prefWidth="263.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnbackUpdate" layoutX="1052.0" layoutY="638.0" onAction="#btnBackPaymentOnAction" prefHeight="20.0" prefWidth="88.0" style="-fx-background-color: #fa983a;" text="Back" textFill="#c72638">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

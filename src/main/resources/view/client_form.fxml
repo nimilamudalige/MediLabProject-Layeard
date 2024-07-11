@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mediLab.Controller.ClientFormController">
+   <children>
+      <ImageView fitHeight="701.0" fitWidth="1205.0">
+         <image>
+            <Image url="@../asserts/istockphoto-901218596-1024x1024-1-1-01.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="473.0" layoutY="32.0" prefHeight="43.0" prefWidth="334.0" text="Client Manage" textFill="#1e4872" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="MathJax_SansSerif-Bold" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblCustomer" layoutX="58.0" layoutY="214.0" prefHeight="384.0" prefWidth="1051.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="107.0" text="Id" />
+            <TableColumn fx:id="colName" prefWidth="151.0" text="Name" />
+            <TableColumn fx:id="colAge" prefWidth="186.0" text="Age" />
+            <TableColumn fx:id="colAdd" prefWidth="173.0" text="Address" />
+            <TableColumn fx:id="colTel" prefWidth="174.0" text="Tel" />
+            <TableColumn fx:id="colEmail" prefWidth="147.0" text=" email" />
+            <TableColumn fx:id="colUserId" minWidth="0.0" prefWidth="112.0" text="userID" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="BtnAddClient" buttonType="RAISED" graphicTextGap="12.0" layoutX="282.0" layoutY="111.0" onAction="#btnAddClientOnAction" prefHeight="72.0" prefWidth="260.0" style="-fx-background-color: #079992;" text="Add Client" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </opaqueInsets>
+         <effect>
+            <DropShadow height="38.55" radius="26.1875" spread="0.17" width="68.2">
+               <color>
+                  <Color red="0.08564814925193787" green="0.19263319671154022" blue="0.4868420958518982" />
+               </color>
+            </DropShadow>
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="640.0" layoutY="114.0" onAction="#btnUpdateOnAction" prefHeight="72.0" prefWidth="334.0" style="-fx-background-color: #0a3d62;" text="Update &amp; Delete Client" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnbackUpdate" layoutX="1021.0" layoutY="636.0" onAction="#btnBackClientOnAction" prefHeight="20.0" prefWidth="88.0" style="-fx-background-color: #fa983a;" text="Back" textFill="#c72638">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

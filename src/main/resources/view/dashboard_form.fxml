@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="702.0" prefWidth="1201.0" style="-fx-background-color: #f1f2f6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mediLab.Controller.DashboardFormController">
+   <children>
+      <ImageView fitHeight="702.0" fitWidth="1201.0" layoutY="3.0">
+         <image>
+            <Image url="@../asserts/istockphoto-1189132246-2048x2048-01.jpeg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Text fill="#080854" layoutX="36.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="12.0" text="WELCOME to METROCARE..!" wrappingWidth="796.0">
+         <font>
+            <Font name="Manjari Regular" size="60.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9342105388641357" green="0.1038011685013771" blue="0.1038011685013771" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Text>
+      <JFXButton fx:id="btnAppointment" buttonType="RAISED" contentDisplay="TOP" layoutX="660.0" layoutY="175.0" onAction="#btnCheckUpOnAction" prefHeight="76.0" prefWidth="261.0" style="-fx-background-color: #0984e3;" text="   Appoinment" textFill="#1e0a79">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow height="68.94" radius="34.525" spread="0.2" width="71.16">
+               <color>
+                  <Color red="0.16470588743686676" green="0.062745101749897" blue="0.4588235318660736" />
+               </color>
+               <input>
+                  <InnerShadow>
+                     <color>
+                        <Color red="0.15034417808055878" green="0.06889619678258896" blue="0.5131579041481018" />
+                     </color>
+                  </InnerShadow>
+               </input>
+            </DropShadow>
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="btnclient" buttonType="RAISED" contentDisplay="TOP" layoutX="821.0" layoutY="86.0" onAction="#btnClientOnAction" prefHeight="76.0" prefWidth="261.0" style="-fx-background-color: #0984e3;" text="      Client Manage" textFill="#1e0a79">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow radius="15.1275" width="41.51">
+               <input>
+                  <BoxBlur>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </BoxBlur>
+               </input>
+               <color>
+                  <Color red="0.06798245757818222" green="0.06798245757818222" blue="0.8157894611358643" />
+               </color>
+            </DropShadow>
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="btnMR" buttonType="RAISED" contentDisplay="TOP" layoutX="533.0" layoutY="267.0" onAction="#btnMROnAction" prefHeight="76.0" prefWidth="261.0" style="-fx-background-color: #0984e3;" text="      Medical Reports " textFill="#1e0a79">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow height="65.23" radius="33.5975" spread="0.16" width="71.16">
+               <color>
+                  <Color red="0.18494151532649994" green="0.05360623821616173" blue="0.5789473652839661" />
+               </color>
+               <input>
+                  <InnerShadow choke="0.23" height="65.23" radius="32.115" width="65.23">
+                     <color>
+                        <Color red="0.11873781681060791" green="0.03752436488866806" blue="0.5789473652839661" />
+                     </color>
+                  </InnerShadow>
+               </input>
+            </DropShadow>
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="btnpayment" buttonType="RAISED" contentDisplay="TOP" layoutX="533.0" layoutY="360.0" onAction="#btnPaymentOnAction" prefHeight="76.0" prefWidth="261.0" style="-fx-background-color: #0984e3;" text="  Payment" textFill="#1e0a79">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow height="47.44" radius="20.255" spread="0.19" width="35.58">
+               <color>
+                  <Color red="0.10384967923164368" green="0.07559999823570251" blue="0.6299999952316284" />
+               </color>
+               <input>
+                  <InnerShadow choke="0.22" height="71.16" radius="33.5975" width="65.23">
+                     <color>
+                        <Color red="0.18323586881160736" green="0.046783626079559326" blue="0.6315789222717285" />
+                     </color>
+                  </InnerShadow>
+               </input>
+            </DropShadow>
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="btnBack" layoutX="1027.0" layoutY="641.0" onAction="#btnbackOnAction" prefHeight="34.0" prefWidth="106.0" style="-fx-background-color: #ff4757;" text="Log out" textFill="WHITE">
+         <font>
+            <Font name="Noto Serif CJK KR Bold" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXButton>
+      <JFXButton fx:id="btnmachine" buttonType="RAISED" contentDisplay="TOP" layoutX="676.0" layoutY="447.0" onAction="#btnMachineOnAction" prefHeight="76.0" prefWidth="261.0" style="-fx-background-color: #0984e3;" text="Machines" textFill="#1e0a79">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow height="47.44" radius="20.255" spread="0.19" width="35.58">
+               <color>
+                  <Color red="0.10384967923164368" green="0.07559999823570251" blue="0.6299999952316284" />
+               </color>
+               <input>
+                  <InnerShadow choke="0.22" height="71.16" radius="33.5975" width="65.23">
+                     <color>
+                        <Color red="0.18323586881160736" green="0.046783626079559326" blue="0.6315789222717285" />
+                     </color>
+                  </InnerShadow>
+               </input>
+            </DropShadow>
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="btnEmployee" buttonType="RAISED" contentDisplay="TOP" layoutX="815.0" layoutY="541.0" onAction="#btnEmployeeOnAction" prefHeight="76.0" prefWidth="261.0" style="-fx-background-color: #0984e3;" text="Employee" textFill="#1e0a79">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow height="47.44" radius="20.255" spread="0.19" width="35.58">
+               <color>
+                  <Color red="0.10384967923164368" green="0.07559999823570251" blue="0.6299999952316284" />
+               </color>
+               <input>
+                  <InnerShadow choke="0.22" height="71.16" radius="33.5975" width="65.23">
+                     <color>
+                        <Color red="0.18323586881160736" green="0.046783626079559326" blue="0.6315789222717285" />
+                     </color>
+                  </InnerShadow>
+               </input>
+            </DropShadow>
+         </effect>
+      </JFXButton>
+      <ImageView layoutX="679.0" layoutY="188.0">
+         <image>
+            <Image url="@../asserts/icons8-appointment-50.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="834.0" layoutY="100.0">
+         <image>
+            <Image url="@../asserts/icons8-client-50.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="551.0" layoutY="373.0">
+         <image>
+            <Image url="@../asserts/icons8-payment-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="38.0" layoutX="557.0" layoutY="285.0">
+         <image>
+            <Image url="@../asserts/icons8-reports-58.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="64.0" layoutX="821.0" layoutY="553.0">
+         <image>
+            <Image url="@../asserts/icons8-employee-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="693.0" layoutY="460.0">
+         <image>
+            <Image url="@../asserts/icons8-laundry-machines-32.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="1036.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="21.0" />
+      <Label fx:id="lblDate" layoutX="949.0" layoutY="37.0" prefHeight="40.0" prefWidth="206.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="38.0" layoutX="900.0" layoutY="33.0">
+         <image>
+            <Image url="@../asserts/icons8-date-94.png" />
+         </image>
+      </ImageView>
+      <Text fill="#725858" layoutX="61.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Metrocare strives to provide top-notch healthcare services ">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#725858" layoutX="63.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="with a skilled team, aiming for quality and affordability.">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Circle fill="#90e9ff" layoutX="1027.0" layoutY="300.0" radius="53.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="106.0" fitWidth="106.0" layoutX="974.0" layoutY="247.0">
+         <image>
+            <Image url="@../asserts/icons8-male-user-50.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1017.0" layoutY="366.0" prefHeight="32.0" prefWidth="118.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Text layoutX="937.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+   </children>
+</AnchorPane>

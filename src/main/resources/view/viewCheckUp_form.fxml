@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="529.0" prefWidth="627.0" style="-fx-background-color: #74b9ff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mediLab.Controller.ViewCheckUpFormController">
+   <children>
+      <Text layoutX="224.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Up" wrappingWidth="243.8896484375">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblCheckup" layoutX="73.0" layoutY="306.0" prefHeight="179.0" prefWidth="492.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="138.0" text="CheckId" />
+          <TableColumn fx:id="colType" prefWidth="198.0" text="Type" />
+            <TableColumn fx:id="colPrice" prefWidth="155.0" text="price" />
+        </columns>
+      </TableView>
+      <Text layoutX="73.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type                       :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="73.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CheckUpIDI             :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtId" layoutX="257.0" layoutY="89.0" prefHeight="31.0" prefWidth="244.0" />
+      <TextField fx:id="txtPrice" layoutX="256.0" layoutY="177.0" prefHeight="31.0" prefWidth="244.0" />
+      <TextField fx:id="txtType" layoutX="256.0" layoutY="133.0" prefHeight="31.0" prefWidth="244.0" />
+      <Text layoutX="74.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price                       :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnCheckUpAdd" layoutX="218.0" layoutY="249.0" onAction="#btnCheckUpAddOnAction" prefHeight="30.0" prefWidth="81.0" style="-fx-background-color: #189720;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="324.0" layoutY="249.0" onAction="#btnUpdateOnAction" style="-fx-background-color: #2d0b90;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="432.0" layoutY="247.0" onAction="#btnDeleteOnAction" style="-fx-background-color: #ae1717;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="304.0" layoutY="-63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add che" />
+   </children>
+</AnchorPane>
